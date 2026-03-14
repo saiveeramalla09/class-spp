@@ -128,7 +128,7 @@ export const SquadPage = () => {
                   <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 700, fontSize: 13, color: "#f0e8ff", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{s.name}</div>
                   <div style={{ fontFamily: "'Space Mono',monospace", fontSize: 9, color: "rgba(200,180,255,.35)", marginTop: 1 }}>{s.roll}</div>
                 </div>
-                <button onClick={(e) => openEdit(s, e)} style={{ background: "green", border: "1px solid rgba(255,255,255,.08)", borderRadius: 7, padding: "7px 10px", color: "green", cursor: "pointer", fontSize: 11 }}>✏️</button>
+                <button onClick={(e) => openEdit(s, e)} style={{ background: "#14B8A6", border: "1px solid rgba(255,255,255,.08)", borderRadius: 7, padding: "7px 10px", color: "green", cursor: "pointer", fontSize: 11 }}>✏️</button>
               </div>
               
               <p style={{ fontFamily: "'Outfit',sans-serif", fontSize: 11, color: "rgba(200,180,255,.5)", marginBottom: 10, lineHeight: 1.5 }}>{s.bio}</p>
