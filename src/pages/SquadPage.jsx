@@ -54,7 +54,7 @@ export const SquadPage = () => {
                onClick={(e) => e.stopPropagation()} 
                style={{ width: "min(480px,95vw)", maxHeight: "85vh", overflowY: "auto", background: "rgba(10,5,28,.99)", border: "1px solid rgba(139,92,246,.5)", borderRadius: 22, padding: 28 }}
             >
-              <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 800, fontSize: 20, color: "#f0e8ff", marginBottom: 20 }}>✏️ Edit Your Profile</div>
+              <div style={{ fontFamily: "'Outfit',sans-serif", fontWeight: 800, fontSize: 20, color: "green", marginBottom: 20 }}>✏️ Edit Your Profile</div>
               
               {/* Form Content */}
               {[["Name", "name"], ["Bio", "bio"], ["Roll No", "roll"]].map(([l, k]) => (
