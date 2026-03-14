@@ -128,41 +128,41 @@ export default function App() {
       <Mesh />
       
       <nav style={{ position: "sticky", top: 0, zIndex: 90, minHeight: 54, display: "flex", alignItems: "center", padding: "0 16px", background: dark ? "rgba(3,2,10,.9)" : "rgba(240,237,255,.9)", backdropFilter: "blur(20px)", borderBottom: "1px solid rgba(139,92,246,.13)" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginRight: "auto" }}>
-          <div style={{ width: 38, height: 38, borderRadius: 11, background: "linear-gradient(135deg,#8B5CF6,#06FFF4)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, boxShadow: "0 4px 14px rgba(139,92,246,.4)" }}>🎓</div>
+        <div style={{ display: "flex", alignItems: "center", gap: 9, marginRight: "auto" }}>
+          <div style={{ width: 34, height: 34, borderRadius: 10, background: "linear-gradient(135deg,#8B5CF6,#06FFF4)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, boxShadow: "0 3px 12px rgba(139,92,246,.4)" }}>🎓</div>
           <div>
-            <span style={{ fontFamily: "'Space Mono',monospace", fontWeight: 700, fontSize: 15, color: dark ? "#f0e8ff" : "#0d0520" }}>CSE-G</span>
-            <span style={{ fontFamily: "'Outfit',sans-serif", fontSize: 10, color: "rgba(139,92,246,.7)", marginLeft: 6 }}>KMIT · 2025–29</span>
+            <span style={{ fontFamily: "'Space Mono',monospace", fontWeight: 700, fontSize: 14, color: dark ? "#f0e8ff" : "#0d0520" }}>CSE-G</span>
+            <span style={{ fontFamily: "'Outfit',sans-serif", fontSize: 9, color: "rgba(139,92,246,.7)", marginLeft: 6 }}>KMIT · 2025–29</span>
           </div>
         </div>
         
-        <div className="top-nav-links" style={{ display: "flex", alignItems: "center", gap: 8, marginRight: 8, overflowX: "auto", padding: "5px", background: "rgba(255,255,255,0.03)", borderRadius: 16 }}>
+        <div className="top-nav-links" style={{ display: "flex", alignItems: "center", gap: 6, marginRight: 8, overflowX: "auto", padding: "4px", background: "rgba(255,255,255,0.03)", borderRadius: 14 }}>
           {NAV.map((n) => (
             <button 
               key={n.id} 
               onClick={() => setPage(n.id)} 
               style={{ 
-                padding: "10px 18px", 
-                borderRadius: 12, 
+                padding: "8px 16px", 
+                borderRadius: 11, 
                 cursor: "pointer", 
-                background: page === n.id ? "linear-gradient(135deg, rgba(139,92,246,0.25), rgba(6,255,244,0.15))" : "transparent", 
+                background: page === n.id ? "linear-gradient(135deg, rgba(139,92,246,0.2), rgba(6,255,244,0.1))" : "transparent", 
                 color: page === n.id ? "#FFF" : "rgba(200,180,255,.55)", 
                 fontFamily: "'Outfit',sans-serif", 
                 fontWeight: page === n.id ? 700 : 500, 
-                fontSize: 14, 
+                fontSize: 13, 
                 border: "1px solid", 
-                borderColor: page === n.id ? "rgba(139,92,246,0.45)" : "transparent", 
+                borderColor: page === n.id ? "rgba(139,92,246,0.4)" : "transparent", 
                 transition: "all .3s cubic-bezier(0.2, 0.8, 0.2, 1)", 
                 whiteSpace: "nowrap",
-                boxShadow: page === n.id ? "0 4px 15px rgba(139,92,246,0.2)" : "none",
+                boxShadow: page === n.id ? "0 4px 12px rgba(139,92,246,0.15)" : "none",
                 display: "flex",
                 alignItems: "center",
-                gap: 8
+                gap: 7
               }}
               onMouseOver={(e) => { if(page !== n.id) e.currentTarget.style.color = "#FFF" }}
               onMouseOut={(e) => { if(page !== n.id) e.currentTarget.style.color = "rgba(200,180,255,.55)" }}
             >
-              <span style={{ fontSize: 18, filter: page === n.id ? `drop-shadow(0 0 6px ${COLORS.v})` : "none" }}>{n.icon}</span> {n.label}
+              <span style={{ fontSize: 15, filter: page === n.id ? `drop-shadow(0 0 5px ${COLORS.v})` : "none" }}>{n.icon}</span> {n.label}
             </button>
           ))}
         </div>
@@ -223,8 +223,8 @@ export default function App() {
             onClick={() => setPage(n.id)} 
             style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 1, padding: "2px 8px", border: "none", background: "transparent", cursor: "pointer", color: page === n.id ? COLORS.v : (dark ? "rgba(200,180,255,.35)" : "rgba(100,70,180,.4)"), transition: "all .2s" }}
           >
-            <div style={{ fontSize: 17, filter: page === n.id ? `drop-shadow(0 0 5px ${COLORS.v})` : "none" }}>{n.icon}</div>
-            <div style={{ fontSize: 9, fontFamily: "'Outfit',sans-serif", fontWeight: page === n.id ? 800 : 400 }}>{n.label}</div>
+            <div style={{ fontSize: 19, filter: page === n.id ? `drop-shadow(0 0 5px ${COLORS.v})` : "none" }}>{n.icon}</div>
+            <div style={{ fontSize: 10, fontFamily: "'Outfit',sans-serif", fontWeight: page === n.id ? 800 : 400 }}>{n.label}</div>
           </button>
         ))}
       </div>
