@@ -108,7 +108,7 @@ export const SquadPage = () => {
         <input className="inp" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="🔍  Search by name, roll or skill..." style={{ marginBottom: 18 }} />
       </motion.div>
       
-      <motion.div layout style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(1fr 1fr ))", gap: 12 }}>
+      <motion.div layout style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(320px,1fr ))", gap: 12 }}>
         <AnimatePresence>
           {filtered.map((s, i) => (
             <motion.div 
