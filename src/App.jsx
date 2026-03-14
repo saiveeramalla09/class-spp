@@ -6,7 +6,7 @@ function App() {
     <div className="app-container" style={{ padding: '48px 40px' }}>
       <nav className="navbar" style={{ height: '70px' }}>
         <ul className="nav-list">
-          <li className="nav-item" style={{ fontSize: '20px', padding: '10px 20px' }}>
+          <li className="nav-item" style={{ fontSize: '14px', padding: '10px 20px' }}>
             <a href="#">Home</a>
           </li>
           <li className="nav-item" style={{ fontSize: '14px', padding: '10px 20px' }}>
